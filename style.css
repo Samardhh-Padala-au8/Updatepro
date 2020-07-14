@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    display: flex;
+    align-items: center;   
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px #e0dede;
+    height: 80px;
+    font-weight: 800;
+}
+#title
+{
+    
+    margin-left: 125px;
+    font-weight: 900; 
+    font-size: 1.8rem;
+    height: 40px;
+    
+}
+.mode1
+{
+    padding-top:10px;
+    cursor: pointer;
+    margin-left: 650px;
+    height: 30px;
+}
+.mode2
+{
+    padding-top: 10px;
+    margin-left: 650px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+#home
+{
+    
+    font-size: 14px;
+}
+#filter
+{
+    display: flex;
+}
+#searchbar
+{
+    box-shadow: 2px 2px 2px 2px #e0dede;   
+    width: 400px;
+    margin-bottom: 20px;
+    height: 50px;
+    margin-left: 110px;
+    margin-right: 5px;
+    border-radius: 2px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#searchicon
+{
+    padding-left: 20px;
+    color:#888888;
+}
+#searchcount
+{
+    outline: none;
+    padding-left: 20px;
+    width: 300px;
+    border: 0px;
+}
+#gettext
+{
+    outline: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: 0px;
+    width: 150px;
+    margin-top: 12px;
+    height: 20px;
+}
+#optiontext
+{
+   
+    box-shadow: 2px 2px 2px 2px #e0dede;
+    margin-left: 500px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+#srcicon
+{
+    cursor: pointer;
+}
+#optionvalues
+{
+    box-shadow: 2px 2px 2px 2px #e0dede;
+    margin-left: 500px;
+    width:200px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 5px;
+    z-index: 1;
+    display: none;
+}
+
+
+#countries
+{
+    display: flex;
+     flex-wrap: wrap; 
+     justify-content: center;
+     align-items: center;
+}
+#cont-select
+{
+    text-align: center;
+    outline: none;
+    width: 200px;
+    margin-top:15px ;
+    padding-left: 0px;
+    border: 0px;
+}
+.countrydata
+{
+    width:250px;
+    height: 300px;
+    box-shadow: 2px 2px 2px 2px #e0dede;
+    display: inline-block;
+    border-radius: 5px;
+    margin:40px 20px;
+    padding-bottom: 45px;
+    cursor: pointer;
+
+}
+.back
+{
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 2px 2px #e0dede;
+    border: 0;
+    height: 30px;
+    outline: 0;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+    display: inline-block;
+}
+#ree
+{
+    display: flex;
+}
+.country_img
+{
+    width: 40%;
+    height: 50%;
+    margin-left: 40px;
+}
+#country_tab
+{
+    padding-left: 20px;
+}
+.country_details
+{
+    margin-left: 50px;
+}
+.ha
+{
+    margin: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    height: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #e0dede;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.ja
+{
+    margin-top: 10px;
+    margin-left: 100px;
+    height: 80px;
+}
+.ra{
+    margin-right: 20px;
+    font-weight: 700;
+}
+#country_title
+{
+    margin-left: 35px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.countryimg
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.country-info
+{
+    font-weight: 700;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+}
+.countrytext
+{
+    padding-left: 15px;
+    padding-right: 10px;
+    text-align: left;
+    
+}
+.countryname
+{
+    width:230px;
+    height: 30px;   
+}
+.countryname_name
+{
+    font-weight: 900;
+    font-size: 1rem;
+}
+li
+{
+    list-style: none;
+    text-align: justify;
+    padding-left: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+ 
+
+
+@media only screen and (max-width: 1200px){
+
+    header
+    {
+        display: flex;
+        align-items: center;   
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 2px 2px #e0dede;
+        height: 80px;
+        font-weight: 800;
+    }
+  
+    #title
+  {
+      width:300px
+  }
+  .mode1
+{
+    padding-top:10px;
+    cursor: pointer;
+    margin-left: 370px;
+    height: 30px;
+}
+.mode2
+{
+    padding-top: 10px;
+    height: 30px;
+   display: none; 
+   margin-left: 380px;
+    cursor: pointer;
+}
+
+#optiontext
+{
+    margin-left: 200px;
+}
+}
+
+@media only screen and (max-width: 890px){
+
+    header
+    {
+        display: flex;
+        align-items: center;   
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 2px 2px #e0dede;
+        height: 80px;
+        font-weight: 800;
+    }
+  
+    #title
+  {
+      width:300px
+  }
+  .mode1
+{
+    padding-top:10px;
+    cursor: pointer;
+    margin-left: 100px;
+    height: 30px;
+}
+.mode2
+{
+    padding-top: 10px;
+    height: 30px;
+   display: none; 
+   margin-left: 100px;
+    cursor: pointer;
+}
+
+#optiontext
+{
+    margin-left: 40px;
+}
+#searchbar
+{
+    width:300px
+}
+}
+@media only screen and (max-width: 411px){
+
+    header
+    {
+        display: flex;
+        /* align-items: center;    */
+        margin-bottom: 10px;
+        box-shadow: 2px 2px 2px 2px #e0dede;
+        height: 100px;
+        font-weight: 800;
+    }
+  #filter
+  {
+      display: block;
+  }
+    #title
+  {
+      width:240px;
+      font-size: 1.4rem;
+      margin-left: 20px;
+  }
+  .mode1
+{
+    cursor: pointer;
+    margin-left: 20px;
+    height: 30px;
+    width: 150px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mode2
+{
+    padding-top: 0px;
+    height: 30px;
+    width: 150px;
+   display: none; 
+   margin-left: 20px;
+    cursor: pointer;
+}
+
+#optiontext
+{
+    margin-left: 20px;
+    margin: 10px;
+}
+#searchbar
+{
+    width:400px;
+    margin-left: 5px;
+}
+}
+
+@media only screen and (max-width: 650px){
+
+    header
+    {
+        display: flex;
+        /* align-items: center;    */
+        margin-bottom: 10px;
+        box-shadow: 2px 2px 2px 2px #e0dede;
+        height: 100px;
+        font-weight: 800;
+    }
+  #filter
+  {
+      display: block;
+  }
+    #title
+  {
+      width:240px;
+      font-size: 1.2rem;
+      margin-left: 20px;
+  }
+  .mode1
+{
+    cursor: pointer;
+    margin-left: 20px;
+    height: 30px;
+    width: 150px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mode2
+{
+    padding-top: 0px;
+    height: 30px;
+    width: 150px;
+   display: none; 
+   margin-left: 20px;
+    cursor: pointer;
+}
+
+#optiontext
+{
+    margin-left: 20px;
+    margin: 10px;
+}
+#searchbar
+{
+    width:380px;
+    margin-left: 10px;
+}
+}
+
+@media only screen and (max-width: 375px){
+
+    header
+    {
+        display: flex;
+        /* align-items: center;    */
+        margin-bottom: 10px;
+        box-shadow: 2px 2px 2px 2px #e0dede;
+        height: 100px;
+        font-weight: 800;
+    }
+  #filter
+  {
+      display: block;
+  }
+    #title
+  {
+      width:240px;
+      font-size: 1.1rem;
+      margin-left: 20px;
+  }
+  .mode1
+{
+    cursor: pointer;
+    margin-left: 20px;
+    height: 30px;
+    width: 150px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mode2
+{
+    padding-top: 0px;
+    height: 30px;
+    width: 150px;
+   display: none; 
+   margin-left: 20px;
+    cursor: pointer;
+}
+
+#optiontext
+{
+    margin-left: 20px;
+    margin: 10px;
+}
+#searchbar
+{
+    width:330px;
+    margin-left: 10px;
+}
+}
+
+@media only screen and (max-width: 330px){
+
+    header
+    {
+        display: flex;
+        /* align-items: center;    */
+        margin-bottom: 10px;
+        box-shadow: 2px 2px 2px 2px #e0dede;
+        height: 80px;
+        width: 350px;
+        font-weight: 800;
+    }
+  #filter
+  {
+      display: block;
+  }
+    #title
+  {
+      width:240px;
+      font-size: 1.1rem;
+      margin-left: 20px;
+  }
+  .mode1
+{
+    cursor: pointer;
+    margin-left: 20px;
+    height: 30px;
+    width: 150px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mode2
+{
+    padding-top: 0px;
+    height: 30px;
+    width: 150px;
+   display: none; 
+   margin-left: 20px;
+    cursor: pointer;
+}
+
+#optiontext
+{
+    margin-left: 20px;
+    margin: 10px;
+}
+#searchbar
+{
+    width:300px;
+    margin-left: 10px;
+}
+}

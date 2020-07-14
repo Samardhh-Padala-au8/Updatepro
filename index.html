@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <script src="https://use.fontawesome.com/bd86c56ff2.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span id="title">Where in the world ?</span>
+    <span class ="mode1"><i class="fa fa-moon-o" aria-hidden="true" ></i> Dark Mode</span>
+    <span class ="mode2"><i class="fa fa-sun-o" aria-hidden="true" ></i> Light Mode</span> 
+  </header>
+  <section id="home" style="display: none;">
+    <div id="filter">
+      <div id="searchbar">
+        <label for="searchcount" id="searchicon"><i class="fa fa-search" aria-hidden="true"></i></label>
+        <input type="text" id="searchcount" placeholder="Search for a country...">
+        
+      </div>
+      <div id="optioncont">
+        <div id="optiontext">
+          <input type="text"placeholder="" id="gettext" value="Filter by Region" readonly>
+          <i class="fa fa-angle-down" aria-hidden="true" id="srcicon"></i>
+        </div>
+        <div id="optionvalues">
+          <ul id="cont-select">
+            <li value="Africa">Africa</li>
+            <li value="Americas">Americas</li>
+            <li value="Asia">Asia</li>
+            <li value="Europe">Europe</li>
+            <li value="Oceania">Oceania</li>
+        </ul>
+        </div>
+      </div>
+  
+    </div>
+      
+        <div id="countries">
+  
+        </div>
+  </section>
+  <section id="individual" style="display: none;">
+    <button class="back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>  Back</button>
+    <div id="detail">
+
+      
+    </div>
+    <div class="bor">
+
+    </div>
+    
+  </section>
+  
+    
+    <script src="index.js"></script>
+</body>
+</html>
